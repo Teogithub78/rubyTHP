@@ -4,6 +4,6 @@ num = gets.chomp.to_i
 a = num - 1
 puts "Voici la pyramide :"
 while a >= 0
-  puts "#"*(num - a)
+  puts ("#"*(num - a)).rjust(num)
   a = a - 1
 end
